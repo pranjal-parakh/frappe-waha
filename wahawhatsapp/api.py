@@ -52,7 +52,7 @@ def waha_webhook():
             customer_doc.insert(ignore_permissions=True)
 
         time.sleep(0.5)
-        send_whatsapp(sender, "Hello Sir/Mam, Thanks for choosing *WhiffCulture* 🌟 .")#\nYour one stop Fragrance solution
+        send_whatsapp(sender, "Hello Sir/Mam, Thanks for choosing *Scentoria* 🌟 .")#\nYour one stop Fragrance solution
         time.sleep(2)
         send_whatsapp(sender, "👋 Say goodbye to delays — We've made ordering simpler and faster; So you get what you need without the wait. ")
         time.sleep(2.5)
@@ -70,7 +70,7 @@ def waha_webhook():
     session_doc.save(ignore_permissions=True)
 
     if text.lower() == "restart":
-        send_whatsapp(sender, "Thank you for choosing *WhiffCulture*! 🌟")
+        send_whatsapp(sender, "Thank you for choosing *Scentoria*! 🌟")
         time.sleep(1.5)
         send_whatsapp(sender, "Start a new enquiry anytime, You can directly type the *'Name'* of fragrance you want! 🔁")
         session_doc.cart = None  
@@ -342,7 +342,7 @@ def waha_webhook():
         time.sleep(1.5)
         send_whatsapp(sender, "🫡 We will share your tracking ID by tomorrow EOD.")
         time.sleep(1)
-        send_whatsapp(sender, "❤️Thanks for choosing *WhiffCulture* .") #Your one stop Perfume Solution
+        send_whatsapp(sender, "❤️Thanks for choosing *Scentoria* .") #Your one stop Perfume Solution
         # session_doc.cart = None  # or "" if that's your default
         # session_doc.cart_total = 0
 
