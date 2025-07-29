@@ -416,7 +416,7 @@ def waha_webhook():
         return "OK"
 
 def send_whatsapp(chat_id, message):
-    url = "http://localhost:3000/api/sendText"
+    url = "https://luxir.in/api/sendText"
 
     headers = {
         "Accept": "application/json",
