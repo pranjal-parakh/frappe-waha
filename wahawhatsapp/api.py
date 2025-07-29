@@ -422,7 +422,7 @@ def send_whatsapp(chat_id, message):
 
     headers = {
         "Accept": "application/json",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
         "X-Api-Key": "admin"
     }
     data = {
