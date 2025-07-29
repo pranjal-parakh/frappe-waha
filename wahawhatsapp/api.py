@@ -416,17 +416,21 @@ def waha_webhook():
         return "OK"
 
 def send_whatsapp(chat_id, message):
+    frappe.log_error("helu", chat_id)
+    frappe.log_error("helu", message)
     url = "https://luxir.in/api/sendText"
 
     headers = {
         "Accept": "application/json",
         "Content-Type": "application/json"
+        "X-Api-Key": "admin"
     }
     data = {
         "chatId": "916265064809@c.us",
         "text": message,
         "session": "default"
     }
+    
     response = requests.post(url, json=data, headers=headers)
     frappe.log_error("WAHA sendText response", response.text)
 
